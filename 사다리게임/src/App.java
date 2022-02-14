@@ -1,5 +1,13 @@
 public class App {
     public static void main(String[] args){
-        System.out.println("사다리");
+
+        int userNumber = InputView.getUserNumberInput();
+
+        int sadariNumber = InputView.getSadariNumberInput();
+
+        Sadari s = new Sadari(userNumber, sadariNumber);
+
+        OutputView.printGraphicalSadari( s.getSadari() );
+
     }
 }

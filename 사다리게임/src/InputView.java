@@ -3,12 +3,12 @@ import java.util.Scanner;
 public class InputView {
     private static Scanner input = new Scanner(System.in);
 
-    public int getUserNumberInput(){
+    public static int getUserNumberInput(){
         OutputView.printUserNumberMessage();
         return input.nextInt();
     }
 
-    public int getSadariNumberInput(){
+    public static int getSadariNumberInput(){
         OutputView.printSadariNumberMessage();
         return input.nextInt();
     }
